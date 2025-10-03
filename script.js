@@ -9,9 +9,9 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.1';
 
 // --- Configuration ---
-const GROQ_API_KEY = process.env.GROQ_API_KEY;
-const SUPABASE_URL = process.env.SUPABASE_URL;
-const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY;
+const GROQ_API_KEY = import.meta.env.VITE_GROQ_API_KEY;
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY;
 const AI_MODEL_NAME = "llama-3.1-8b-instant";
 const EMBEDDING_MODEL = 'Xenova/all-MiniLM-L6-v2';
 
